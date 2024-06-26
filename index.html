@@ -38,6 +38,11 @@
             font-size: 0.9em;
             color: #ced4da;
         }
+        .btn-custom img {
+            width: 20px; /* Modifica la dimensione dell'immagine qui */
+            height: 20px; /* Modifica la dimensione dell'immagine qui */
+            margin-right: 5px; /* Spazio tra l'immagine e il testo */
+        }        
     </style>
 </head>
 <body>
@@ -51,9 +56,14 @@
             <label for="inputFile">Carica il file CSV dei turni:</label>
             <input type="file" id="inputFile" class="form-control-file">
         </div>
+
         <div class="text-center">
-            <button id="processButton" class="btn btn-primary" >Scarica turni</button>
+            <button class="btn btn-primary btn-custom">
+                <img src="download_icon.png" alt="Download Icon">
+                Download
+            </button>
         </div>
+
         <div class="footer">
             Designed and programmed by Dimitri Springhetti
         </div>
